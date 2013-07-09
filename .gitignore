@@ -1,0 +1,5 @@
+# Mac System Files
+.DS_Store
+
+# SASS extras
+.sass-cache
