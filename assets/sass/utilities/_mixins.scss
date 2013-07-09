@@ -16,14 +16,40 @@
 **/
 
 
+/** 
+ * Dropdown hidden & visible styles
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**/
 @mixin dropdown_hidden() { position: absolute; height: 0; overflow: hidden; visibility: hidden; }
 
 @mixin dropdown_visible() { position: static; height: auto; overflow: visible; visibility: visible; }
 
+
+
+/** 
+ * For image replacement
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * Same as the '.ir' helper class, but as a SASS mixin.
+**/
 @mixin image_replacement() { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
 
+
+
+/** 
+ * Initial default for CSS arrow icons
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**/
 @mixin icon_arrow() { background-color: transparent; content: ''; display: block; height: 0; position: absolute; width: 0; }
 
+
+
+/** 
+ * Hide only visually, but have it available for screenreaders
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * Same as the '.visually-hidden' helper class, but as a SASS mixin. Also 
+ * provides a way to 'restore' the visibility of the element if used as a 
+ * mixin, thus adding/removing the styles.
+**/
 @mixin visually_hidden() { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 
 @mixin visually_restored() { clip: auto; height: auto; margin: auto; overflow: visible; position: static; width: auto; }

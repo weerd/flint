@@ -3,3 +3,6 @@
 
 # SASS extras
 .sass-cache
+
+# Ignore Compiled CSS file/directory from SASS
+global.css
