@@ -2,14 +2,6 @@
 
 Enter description here&hellip;
 
-
-## How To Use This Kit
-
-The **_$module-template.scss** file provides quick access to a copy/paste module file sample, which you can paste into a newly created module file, rename and get your styling on!
-
-The **sample.html** file contains example markup, for reference.
-
-
 ## Browser Support
 
 * Google Chrome
@@ -17,6 +9,13 @@ The **sample.html** file contains example markup, for reference.
 * Apple Safari 5+
 * Opera 12+
 * Internet Explorer 8+
+
+
+## How To Use This Kit
+
+The **_$module-template.scss** file provides quick access to a copy/paste module file sample, which you can paste into a newly created module file, rename and get your styling on!
+
+The **sample.html** file contains example markup, for reference.
 
 
 ## Credits

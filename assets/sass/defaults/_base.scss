@@ -1,0 +1,29 @@
+/** 
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * BASE STYLES
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**/
+
+
+/**
+ * Apply a natural box layout model to all elements
+**/
+* { 
+	-webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+					box-sizing: border-box; 
+}
+
+body { font-size: $base_font_size + px; }
+
+
+
+
+/** 
+ * MEDIA QUERIES
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**/
+
+@media only screen and (min-width: $medium) {
+
+}
