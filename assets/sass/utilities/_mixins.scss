@@ -1,0 +1,29 @@
+/** 
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * SASS MIXINS
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**/
+
+
+/** 
+ * Example SASS Mixin structure:
+ *
+@mixin colored_box($color) { 
+  @extend .box;
+  background-color: $color;
+  border-color: border_color($color);
+}
+**/
+
+
+@mixin dropdown_hidden() { position: absolute; height: 0; overflow: hidden; visibility: hidden; }
+
+@mixin dropdown_visible() { position: static; height: auto; overflow: visible; visibility: visible; }
+
+@mixin image_replacement() { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+
+@mixin icon_arrow() { background-color: transparent; content: ''; display: block; height: 0; position: absolute; width: 0; }
+
+@mixin visually_hidden() { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+@mixin visually_restored() { clip: auto; height: auto; margin: auto; overflow: visible; position: static; width: auto; }

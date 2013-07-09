@@ -2,6 +2,9 @@
 
 Enter description here&hellip;
 
+This kit uses [SASS](http://sass-lang.com/) and [Compass](http://compass-style.org/) for some awesome CSS preprocessing power.
+
+
 ## Browser Support
 
 * Google Chrome
