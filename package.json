@@ -1,0 +1,19 @@
+{
+  "name": "flint",
+  "description": "Tasks to run for Flint: Front-end Starter Kit",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weerd/flint"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-compass": "~0.5.0",
+    "grunt-contrib-csslint": "~0.1.2",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-watch": "~0.4.3"
+  }
+}
