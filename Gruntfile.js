@@ -21,16 +21,16 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				// The files to concatenate.
-				src: ['assets/js/**/*.js'],
+				src: ['assets/js/**/*.js', '!assets/js/extra/*', '!assets/js/global.js', 'assets/js/global.js'],
 				// The location of the resulting JS file.
-				dest: 'assets/js/global.js'
+				dest: 'assets/js/concat.js'
 			}
 		},
 
 		uglify: {
 			options: {
 				// The banner is inserted at the top of the output.
-				banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+				banner: '/*! <%= pkg.name %> <%= grunt.template.today("mm-dd-yyyy") %> */\n'
 			},
 			dist: {
 				files: {
