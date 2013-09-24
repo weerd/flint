@@ -21,7 +21,7 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				// The files to concatenate.
-				src: ['assets/js/**/*.js', '!assets/js/extra/*', '!assets/js/global.js', 'assets/js/global.js'],
+				src: ['assets/js/plugins/**/*.js', '!assets/js/modules/**/*.js', '!assets/js/global.js', 'assets/js/modules/**/*.js', 'assets/js/global.js'],
 				// The location of the resulting JS file.
 				dest: 'assets/js/concat.js'
 			}
@@ -34,7 +34,8 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					'assets/js/global.min.js': ['<%= concat.dist.dest %>']
+					'assets/js/global.min.js': ['<%= concat.dist.dest %>'],
+					'assets/js/modernizr.min.js': ['assets/js/modernizr.js']
 				}
 			}
 		},
