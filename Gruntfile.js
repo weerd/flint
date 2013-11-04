@@ -19,10 +19,14 @@ module.exports = function(grunt) {
 				// Define a string to put between each file in the concatenated output.
 				separator: ';'
 			},
-			dist: {
+			components: {
 				// The files to concatenate.
-				src: ['assets/js/plugins/**/*.js', '!assets/js/modules/**/*.js', '!assets/js/global.js', 'assets/js/modules/**/*.js', 'assets/js/global.js'],
+				src: ['assets/js/plugins/**/*.js', '!assets/js/modules/**/*.js', 'assets/js/modules/**/*.js'],
 				// The location of the resulting JS file.
+				dest: 'assets/js/components.js'
+			},
+			full: {
+				src: ['assets/js/components.js', 'assets/js/global.js'],
 				dest: 'assets/js/concat.js'
 			}
 		},
@@ -34,7 +38,7 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					'assets/js/global.min.js': ['<%= concat.dist.dest %>'],
+					'assets/js/global.min.js': ['<%= concat.full.dest %>'],
 					'assets/js/modernizr.min.js': ['assets/js/modernizr.js']
 				}
 			}
