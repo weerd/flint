@@ -69,3 +69,46 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 @mixin menu_reset() { list-style-type: none; margin: 0; padding: 0; }
+
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// CLEARFIX
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//--
+// Contain floats: h5bp.com/q
+//--
+
+@mixin clearfix() {
+        &:before, &:after { content: ""; display: table; }
+        &:after { clear: both; }
+        & { *zoom: 1; } 
+}
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// PSEUDO ELEMENT BASE
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@mixin pseudo_base($height:0, $width:0) { content: ''; display: block; height: $height; width: $width; }
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// FORCE TO COMPOSITE LAYER
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
+//--
+// Force browser to move element to composite layer to help with performance.
+//--
+
+@mixin composite_layer() {
+	-webkit-transform: translateZ(0);
+		-moz-transition: translateZ(0);
+			 -o-transform: translateZ(0);
+			-ms-transform: translateZ(0);
+					transform: translateZ(0);
+}
