@@ -15,7 +15,7 @@
 					box-sizing: border-box; 
 }
 
-body { font-size: $base_font_size + px; }
+body { @include rem($base_font_size); }
 
 img { display: block; height: auto; max-width: 100%; width: auto; }
 
