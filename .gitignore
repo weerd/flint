@@ -1,5 +1,6 @@
-# Mac System Files
+# System Files
 .DS_Store
+Thumbs.db
 
 # SASS extras
 .sass-cache
