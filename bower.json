@@ -1,0 +1,29 @@
+{
+  "name": "Flint",
+  "version": "1.0.0",
+  "authors": [
+    "Diego Lorenzo <diego@diegolorenzo.com>"
+  ],
+  "description": "Component libraries for the application.",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "dist/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "jquery-hammerjs": "~1.1.3",
+    "hammerjs": "~1.1.3",
+    "normalize.css": "~3.0.1",
+    "picturefill": "~2.0.0"
+  }
+}
