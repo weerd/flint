@@ -5,5 +5,14 @@ Thumbs.db
 # SASS extras
 .sass-cache
 
-# Ignore Compiled CSS file/directory from SASS
-global.css
+# Ignore Gem Lock file
+Gemfile.lock
+
+# Ignore Bundle log
+.bundle
+
+# Ignore npm modules
+node_modules/
+
+# Ignore build directory
+dist/

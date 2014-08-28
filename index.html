@@ -1,63 +1,50 @@
 <!DOCTYPE html>
 
-<!--[if IEMobile 7]> <html class="no-js iem7" lang="en"> <![endif]-->
-<!--[if lte IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>       <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
 
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Primer Site Title</title>
 
-	<link rel="icon" type="image/ico" href="/assets/images/favicon.ico"/>
-
-	<script src="/assets/js/modernizr.dev.js"></script>
-
-	<link rel="stylesheet" href="/assets/css/global.css" />
-
-	<!--[if IE 8]>
-  <script src="/assets/js/respond.min.js"></script>
-  <![endif]-->
+  <link rel="icon" type="image/ico" href="/favicon.ico?v1"/>
+  <script src="/dist/js/modernizr.js"></script>
+	<link rel="stylesheet" href="/dist/css/main.css" />
 </head>
 
 <body>
 
   <div id="page" class="page">
+    <div class="container">
 
-    <header role="banner"></header>
+      <header role="banner">
+        Header content goes here.
+      </header>
 
-    <nav class="main-nav" role="navigation">
-      <ul class="menu menu-level-1">
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-      </ul>
-    </nav>
+      <nav class="main-nav" role="navigation">
+        <ul class="menu menu-level-1">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </nav>
 
-    <main role="main">
-      <!-- page content -->
-    </main>
+      <main role="main">
+        Main content goes here.
+      </main>
 
-    <footer role="contentinfo"></footer>
+      <footer role="contentinfo">
+        Footer content goes here.
+      </footer>
 
-  </div>
-	
-  <!--[if lte IE 7]>
-  <div class="upgrade-message">
-    <div class="wrapper">
-      <p>Uh-oh. Looks like your browser is out of date. Upgrading it will give you a safer, more secure browsing experience as well as allow you to fully experience this and other modern websites.</p>
-      <a title="Upgrade your browser!" href="http://browsehappy.com/" target="_blank">Please upgrade your browser</a>
     </div>
   </div>
-  <![endif]-->
 
-	<!--<script src="/assets/js/helpers.js"></script>-->
-  <!--<script src="/assets/js/zepto.dev.js"></script>-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="/assets/js/global.js"></script>
+  <script src="/dist/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/dist/js/main.js"></script>
 </body>
 
 </html>
