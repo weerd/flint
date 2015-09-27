@@ -1,18 +1,5 @@
-# System Files
 .DS_Store
 Thumbs.db
-
-# SASS extras
 .sass-cache
-
-# Ignore Gem Lock file
-Gemfile.lock
-
-# Ignore Bundle log
-.bundle
-
-# Ignore npm modules
 node_modules/
 
-# Ignore build directory
-dist/
